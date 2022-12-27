@@ -38,8 +38,8 @@ const Connect = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_bms7826",
-        "template_2i0arfq",
+        "service_zb9eyoq",
+        "template_evmqc7z",
         form.current,
         "7sc1o-EVY--feH8er"
       )

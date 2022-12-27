@@ -10,7 +10,7 @@ const data = [
   {
     title: "Lost Crypto-currency Recovery",
     description:
-      "Recovery lost cryptocurrencies, bitcoin, ETH, USDT (ERC20), USDT (TRC20), BNB, lite coin, dogecoin, etc.",
+      "Recover lost cryptocurrencies, bitcoin, ETH, USDT (ERC20), USDT (TRC20), BNB, lite coin, dogecoin, etc.",
   },
   {
     title: "Romance Scam Recovery",

@@ -19,13 +19,13 @@ const Tablet = () => {
       <Button link={"https://wa.link/jjtebz"}>
         <BsWhatsapp />
       </Button>
-      <Button link={"https://msng.link/o/?@trezorwalletzcom=tg"}>
+      <Button link={"https://t.me/ZECRAKSTECH"}>
         <FaTelegramPlane />
       </Button>
-      <Button link={"https://msng.link/o/?trezorwalletzcom=ig"}>
+      <Button link={"https://instagram.com/zecrakstech?igshid=YmMyMTA2M2Y="}>
         <BsInstagram />
       </Button>
-      <Button link={"mailto:trezorwalletz.com@gmail.com?subject=I%20am%20messaging%20from%20trezorwalletz.com"}>
+      <Button link={"mailto:zecrackstechzecrakstech@gmail.com?subject=I%20am%20messaging%20from%20trezorwalletz.com"}>
         <FiMail />
       </Button>
     </div>
