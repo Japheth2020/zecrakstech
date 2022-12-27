@@ -14,11 +14,11 @@ const WhatWeDo = () => {
   return (
     <div className="w-full relative lg:px-[10em] md:px-[6em] px-[1em] py-[2em] ">
       <div className="flex md:flex-row flex-col gap-4 w-full relative items-start justify-between">
-        <img
+        <Image
           alt="img"
           src="/images/whatwedo.jpg"
-          // width={1000}
-          // height={250}
+          width={800}
+          height={250}
           className="shadow-md flex-1 "
           data-aos="fade-right"
         />

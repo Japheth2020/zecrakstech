@@ -39,7 +39,7 @@ const TestimonyCard = ({ props }: any) => {
       <div className=" bg-white overflow-hidden shadow-2xl flex items-center  flex-col py-[2em]">
         <div>
           <div className="rounded-full bg-gray-100 h-[15em] w-[15em] overflow-hidden shadow-xl flex items-center justify-center">
-            <img height={200} width={200} src={props.image} alt="" />
+            <Image height={200} width={200} src={props.image} alt="" />
           </div>
           <div className="">
             <p className="font-[600] text-[2em] leading-[1em]">{props.name}</p>
