@@ -4,6 +4,7 @@ import { RxDoubleArrowDown } from "react-icons/rx";
 import { BiChevronDown } from "react-icons/bi";
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import Link from "next/link";
 
 const Showcase = () => {
   useEffect(() => {
@@ -30,9 +31,9 @@ const Showcase = () => {
               <RxDoubleArrowDown />
             </p>
 
-            <button className="py-5 px-[2em] font-[600] bg-pri text-white hover:bg-white hover:p-5 hover:text-pri animate-all duration-200 ">
+            <Link href={"services"} className="py-5 px-[2em] font-[600] bg-pri text-white hover:bg-white hover:p-5 hover:text-pri animate-all duration-200 ">
               GET IN TOUCH
-            </button>
+            </Link>
           </div>
         </div>
       </div>

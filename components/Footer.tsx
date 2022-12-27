@@ -7,11 +7,11 @@ import { FiMail } from "react-icons/fi";
 const Footer = () => {
   return (
     <div className="lg:px-[10rem] md:p-[6em] p-[1em]  py-[6em] bg-pri">
-      <div className=" flex md:flex-row flex-col ">
+      <div className=" flex md:flex-row flex-col md:gap-x-[4em] gap-0">
         <div className="flex flex-col gap-5 flex-1 mb-[3em]">
           <p className="text-[3em] font-[700] text-white ">ZECRAKSTECH</p>
           <p className="text-[18px] text-white ">
-            Strongwidget is a top-level organization that operates in more than
+          ZECRAKSTECH is a top-level organization that operates in more than
             149 countries, with top-notch specialists and professionals to
             assist you with any technological issue.
           </p>
@@ -53,14 +53,14 @@ const Footer = () => {
               href={"https://t.me/ZECRAKSTECH"}
             >
               <FaTelegramPlane />
-              trezorwalletzcom{" "}
+              ZECRAKSTECH
             </a>
             <a
               className="flex items-center gap-2"
               href={"https://instagram.com/zecrakstech?igshid=YmMyMTA2M2Y="}
             >
               <BsInstagram />
-              trezorwalletzcom
+              zecrakstech
             </a>
             <a
               className="flex items-center gap-2"
@@ -69,7 +69,7 @@ const Footer = () => {
               }
             >
               <FiMail />
-              trezorwalletz.com@gmail.com
+              zecrackstechzecrakstech.com@gmail.com
             </a>
           </div>
         </div>

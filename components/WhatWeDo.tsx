@@ -16,7 +16,7 @@ const WhatWeDo = () => {
       <div className="flex md:flex-row flex-col gap-4 w-full relative items-start justify-between">
         <Image
           alt="img"
-          src="/images/whatwedo.jpg"
+          src="/images/wallet_defi.jpg"
           width={800}
           height={250}
           className="shadow-md flex-1 "
