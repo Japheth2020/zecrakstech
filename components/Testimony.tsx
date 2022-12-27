@@ -79,10 +79,10 @@ const Testimony = () => {
     <div className="lg:px-[10em] md:px-[6em] px-[1em] py-[2em]  ">
       <div className=" text-center ">
         <h1 className="font-[600] text-[4em] leading-[1em] ">Testimony</h1>
-        <p className="font-[500] text-[1.5em] ">What They're talking</p>
+        <p className="font-[500] text-[1.5em] ">What They are talking</p>
         <div className="mt-[3rem] flex  gap-4 overflow-scroll scrollbar-hide">
-          {data.map((props) => {
-            return <TestimonyCard props={props} />;
+          {data.map((props, index) => {
+            return <TestimonyCard key={index} props={props} />;
           })}
         </div>
       </div>

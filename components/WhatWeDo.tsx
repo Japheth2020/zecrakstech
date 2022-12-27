@@ -38,7 +38,7 @@ const WhatWeDo = () => {
               className="font-[900] md:text-[5em] text-[3em] leading-[1.3em]"
               data-aos="fade-right"
             >
-              We're Providing Technological Solution
+              We are Providing Technological Solution
             </p>
               <p className="md:text-[18px] text-[16px] text-gray-700">
                 Technology offers various tools to boost the development and
