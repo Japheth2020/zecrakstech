@@ -4,6 +4,7 @@ import { HiOutlineMinusSm } from "react-icons/hi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { MdGpsFixed } from "react-icons/md";
+import Link from "next/link";
 
 const data = [
   {
@@ -67,7 +68,8 @@ const data = [
 
 const ServiceCard = ({ props }: any) => {
   return (
-    <div className="flex flex-col group cursor-pointer ">
+    <Link href="/wallets">
+      <div className="flex flex-col group cursor-pointer ">
       <div className="flex items-center gap-4 p-4 group-hover:bg-pri group-hover:text-white animate duration-500 bg-white text-pri rounded-lg">
         <div className="group-hover:bg-pri bg-white text-[10em]  w-[50px] h-[50px] shadow-xl rounded-full flex items-center justify-center">
         <MdGpsFixed />
@@ -80,6 +82,7 @@ const ServiceCard = ({ props }: any) => {
         </p>
       </div>
     </div>
+    </Link>
   );
 };
 

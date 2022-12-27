@@ -41,7 +41,7 @@ const Header = () => {
         <div className="flex items-center gap-x-[2em]  px-[3em] ">
           <HeaderNav name={"HOME"} link="/" />
           <HeaderNav name={"SERVICES"} link="/services" />
-          <HeaderNav name={"CONTACT"} link="/contact" />
+          {/* <HeaderNav name={"CONTACT"} link="/contact" /> */}
         </div>
         <div className="flex items-center gap-2">
           <div className="p-4 rounded-full bg-pri text-white text-[2em]">
