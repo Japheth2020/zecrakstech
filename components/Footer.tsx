@@ -50,14 +50,14 @@ const Footer = () => {
             </a>
             <a
               className="flex items-center gap-2"
-              href={"https://msng.link/o/?@trezorwalletzcom=tg"}
+              href={"https://t.me/ZECRAKSTECH"}
             >
               <FaTelegramPlane />
               trezorwalletzcom{" "}
             </a>
             <a
               className="flex items-center gap-2"
-              href={"https://msng.link/o/?trezorwalletzcom=ig"}
+              href={"https://instagram.com/zecrakstech?igshid=YmMyMTA2M2Y="}
             >
               <BsInstagram />
               trezorwalletzcom
@@ -65,7 +65,7 @@ const Footer = () => {
             <a
               className="flex items-center gap-2"
               href={
-                "mailto:trezorwalletz.com@gmail.com?subject=I%20am%20messaging%20from%20trezorwalletz.com"
+                "mailto:zecrackstechzecrakstech.com@gmail.com?subject=I%20am%20messaging%20from%20trezorwalletz.com"
               }
             >
               <FiMail />

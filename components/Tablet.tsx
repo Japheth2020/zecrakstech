@@ -11,6 +11,7 @@ export const Button = ({ children, link }:any) => {
       <button className=" p-2 rounded-full text-[2em]">{children}</button>
     </a>
   );
+
 };
 
 const Tablet = () => {
