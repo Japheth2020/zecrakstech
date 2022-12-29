@@ -28,7 +28,7 @@ export async function getStaticProps() {
 
   var res = await axios.get(`${server}/api/articles`, {
     headers: {
-      Accept: "application/json, text/plain, */*",
+      Accept: "application/json",
       "User-Agent": "*",
     },
   });
