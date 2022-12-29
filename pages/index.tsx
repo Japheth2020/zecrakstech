@@ -7,10 +7,12 @@ import Testimony from "../components/Testimony";
 import Showcase from "../components/Showcase/Showcase";
 import Tablet from "../components/Tablet";
 import { server } from "../config";
+import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ articles}:any) {
+export default function Home({ articles }: any) {
+  console.log(articles)
   return (
     <>
       <Head>
@@ -22,23 +24,28 @@ export default function Home({ articles}:any) {
       <main className="">
         <Showcase />
         <WhatWeDo />
-        <Services articles = {articles} />
+        <Services articles={articles} />
         {/* <Skilled /> */}
         <Testimony />
         <Tablet />
-     
       </main>
     </>
   );
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/articles`)
-  const articles = await res.json()
+  var res = await axios.get(`${server}/api/articles`, {
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": "*",
+    },
+  });
+  const articles = JSON.stringify(res.data)
+  console.log("rt: ", articles)
 
   return {
     props: {
-      articles,
+      articles : JSON.parse(articles),
     },
-  }
-}
+  };
+};

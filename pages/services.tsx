@@ -3,6 +3,7 @@ import React from "react";
 import What from "../components/What";
 import Services_2 from "../components/Services/Services_2";
 import { server } from "../config";
+import axios from "axios";
 
 const services = ({articles}:any) => {
   return (
@@ -21,16 +22,23 @@ const services = ({articles}:any) => {
   );
 };
 
+
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/articles`)
-  const articles = await res.json()
+  var res = await axios.get(`${server}/api/articles`, {
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": "*",
+    },
+  });
+  const articles = JSON.stringify(res.data)
+  console.log("rt: ", articles)
 
   return {
     props: {
-      articles,
+      articles : JSON.parse(articles),
     },
-  }
-}
+  };
+};
 
 
 export default services;

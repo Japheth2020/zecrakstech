@@ -69,7 +69,7 @@ const Services = ({ articles }: any) => {
         </div>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-[5em] gap-[3em]">
-          {articles.slice(0, 4).map((item:any, index:any) => <ServiceCard key={index} article={item}  />)}
+          {articles.map((item:any, index:any) => <ServiceCard key={index} article={item}  />)}
         </div>
       </div>
     </div>
