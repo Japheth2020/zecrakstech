@@ -28,15 +28,15 @@ const ServiceShowcase = ({ article }: any) => {
           />
         </div>
         <div>
-          {article?.body?.map((item: any) => (
-            <p className="md:text-[24px] text-[18px] pb-[1em] ">{item.p}</p>
+          {article?.body?.map((item: any, index:any) => (
+            <p key={index} className="md:text-[24px] text-[18px] pb-[1em] ">{item.p}</p>
           ))}
         </div>
 
         <div>
           <p>{article?.bullets?.description}</p>
           {article?.bullets?.body?.map((item: any, index: any) => (
-            <p className="md:text-[24px] text-[18px] pb-[1em]">
+            <p key={index} className="md:text-[24px] text-[18px] pb-[1em]">
               <span>{index + 1}</span>. {"  "} <span>{item.bullet}</span>
             </p>
           ))}
