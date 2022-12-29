@@ -3,6 +3,7 @@ import React from "react";
 import What from "../components/What";
 import Services_2 from "../components/Services/Services_2";
 import { server } from "../config";
+import axios from "axios";
 
 const services = ({articles}:any) => {
   return (
@@ -21,15 +22,26 @@ const services = ({articles}:any) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/articles`)
-  const articles = await res.json()
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
 
+  var res = await axios.get(`${server}/api/articles`, {
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": "*",
+    },
+  });
+  // var res = JSON.stringify(res.data);
+  console.log("res ", res);
+
+  // By returning { props: posts }, the Blog component
+  // will receive `posts` as a prop at build time
   return {
     props: {
-      articles: JSON.parse(articles),
+      articles: JSON.parse(JSON.stringify(res.data)),
     },
-  }
+  };
 }
 
 
