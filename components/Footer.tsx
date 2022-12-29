@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col gap-5 flex-1 mb-[3em]">
           <p className="text-[3em] font-[700] text-white ">ZECRAKSTECH</p>
           <p className="text-[18px] text-white ">
-          ZECRAKSTECH is a top-level organization that operates in more than
+            ZECRAKSTECH is a top-level organization that operates in more than
             149 countries, with top-notch specialists and professionals to
             assist you with any technological issue.
           </p>
@@ -61,6 +61,15 @@ const Footer = () => {
             >
               <BsInstagram />
               zecrakstech
+            </a>
+            <a
+              className="flex items-center gap-2"
+              href={
+                "https://www.facebook.com/profile.php?id=100078461364219&mibextid=LQQJ4d"
+              }
+            >
+              <FiMail />
+              Facebook: zecrakstech
             </a>
             <a
               className="flex items-center gap-2"

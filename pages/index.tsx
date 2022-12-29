@@ -6,10 +6,11 @@ import Services from "../components/Services/Services";
 import Testimony from "../components/Testimony";
 import Showcase from "../components/Showcase/Showcase";
 import Tablet from "../components/Tablet";
+import { server } from "../config";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ articles}:any) {
   return (
     <>
       <Head>
@@ -21,7 +22,7 @@ export default function Home() {
       <main className="">
         <Showcase />
         <WhatWeDo />
-        <Services />
+        <Services articles = {articles} />
         {/* <Skilled /> */}
         <Testimony />
         <Tablet />
@@ -29,4 +30,15 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+export const getStaticProps = async () => {
+  const res = await fetch(`${server}/api/articles`)
+  const articles = await res.json()
+
+  return {
+    props: {
+      articles,
+    },
+  }
 }

@@ -1,65 +1,39 @@
 import React, { useEffect } from "react";
-import classes from "./Services.module.css";
 import { HiOutlineMinusSm } from "react-icons/hi";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { GrBitcoin } from "react-icons/gr";
-import { IoHeartDislikeOutline } from "react-icons/io5";
-import { GrStackOverflow } from "react-icons/gr";
-import { AiTwotoneBank } from "react-icons/ai";
 import Link from "next/link";
+import { MdGpsFixed } from "react-icons/md";
 
-const data = [
-  {
-    title: "Lost Crypto-currency Recovery",
-    image: <GrBitcoin />,
-    description:
-      "Recovery lost cryptocurrencies, bitcoin, ETH, USDT (ERC20), USDT (TRC20), BNB, lite coin, dogecoin, etc.",
-  },
-  {
-    title: "Romance Scam Recovery",
-    image: <IoHeartDislikeOutline />,
-    description:
-      "Recover lost money on dating apps, recover lost properties, recover lost loan to a romance scam, recover lost money from fake romance accounts.",
-  },
-  {
-    title: "Investment Scam recovery",
-    image: <GrStackOverflow />,
-    description:
-      "Recover lost investment funds, lost/frozen trading accounts, Mining scams, money doubling scams, and rugged trading platforms.",
-  },
-  {
-    title: "Bank Transfer Scam/Money laundering",
-    image: <AiTwotoneBank />,
-    description:
-      "Recover money sent to wrong bank account, bank unsettled transfer, E-transfer, MoneyGram, P2P transfers, cash deposit.",
-  },
-];
 
-const ServiceCard = ({ props }: any) => {
+
+const ServiceCard = ({ article }: any) => {
+  console.log("prps; ", article)
   return (
-   <Link href={"/wallets"} >
-     <div className="flex flex-col group cursor-pointer ">
-      <div className="flex items-center gap-4 p-4 group-hover:bg-pri group-hover:text-white animate duration-500 bg-white text-pri rounded-lg">
-        <div className="group-hover:bg-pri bg-white text-[10em]  w-[50px] h-[50px] shadow-xl rounded-full flex items-center justify-center">
-          {props.image}
+    <Link href={`/article/${article.id}`}>
+      <div className="flex flex-col group cursor-pointer ">
+        <div className="flex items-center gap-4 p-4 group-hover:bg-pri group-hover:text-white animate duration-500 bg-white text-pri rounded-lg">
+          <div className="group-hover:bg-pri bg-white text-[10em]  w-[50px] h-[50px] shadow-xl rounded-full flex items-center justify-center">
+           <MdGpsFixed />
+          </div>
+          <p className="font-[700] text-[1.5em]">{article.title} </p>
         </div>
-        <p className="font-[700] text-[1.5em]">{props.title} </p>
+        <div className=" group-hover:bg-white animate duration-500 group-hover:text-pri bg-blue-600 p-[2em]">
+          <p className="text-[16px] font-[500] text-center leading-[2em]">
+            {article.description}
+          </p>
+        </div>
       </div>
-      <div className=" group-hover:bg-white animate duration-500 group-hover:text-pri bg-blue-600 p-[2em]">
-        <p className="text-[16px] font-[500] text-center leading-[2em]">
-          {props.description}
-        </p>
-      </div>
-    </div>
-   </Link>
+    </Link>
   );
 };
 
-const Services = () => {
+const Services = ({ articles }: any) => {
   useEffect(() => {
     AOS.init();
   }, []);
+  console.log(articles);
+  
 
   return (
     <div className=" text-white  bg-pri pt-[3em] ">
@@ -95,9 +69,7 @@ const Services = () => {
         </div>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-[5em] gap-[3em]">
-          {data.map((item, index) => {
-            return <ServiceCard key={index} props={item} />;
-          })}
+          {articles.slice(0, 4).map((item:any) => <ServiceCard article={item}  />)}
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const Showcase = () => {
 
   return (
     <div className={`w flex text-center ${classes.bg}  relative`}>
-      <div data-aos="fade-right" className="absolute text-[40em] font-[ -top-32 -left-60 text-blue-600">
+      <div data-aos="fade-right" className="absolute text-[40em] -top-32 -left-60 text-blue-600">
         <BiChevronDown />
       </div>
 
