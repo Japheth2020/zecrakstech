@@ -34,18 +34,13 @@ export default function Home({ articles }: any) {
 }
 
 export const getStaticProps = async () => {
-  var res = await axios.get(`${server}/api/articles`, {
-    headers: {
-      Accept: "application/json, text/plain, */*",
-      "User-Agent": "*",
-    },
-  });
-  const articles = JSON.stringify(res.data)
-  console.log("rt: ", articles)
+  const res = await fetch(`${server}/api/articles`)
+  const articles = await res.json()
 
   return {
     props: {
-      articles : JSON.parse(articles),
+      articles: JSON.parse(articles),
     },
-  };
-};
+  }
+}
+
