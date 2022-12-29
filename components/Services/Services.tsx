@@ -54,17 +54,17 @@ const Services = ({ articles }: any) => {
               className="font-[600] md:text-[3em] leading-[1.3em] mt-4"
               // data-aos="fade-right "
             >
-              We influence lives! Our services aid vitims of crypto scams, with
-              timely recovery of their funds. We also provide a wide range of
-              services to help you protect your funds and assets from cyber
-              threats.
+              Lives are impacted by us! With the rapid recovery of their assets,
+              our services help victims of cryptocurrency frauds. Additionally,
+              we offer a variety of services to assist you in safeguarding your
+              money and valuables against online threats.
             </p>
           </div>
           <p className="text-[18px] ">
-            Whether you’ve lost money in your capacity as an investor, trader,
-            miner, shopper, romance scam victim, or online user, we’re capable
-            to help you in our specialization as a consultant, legal aid,
-            recovery agent, or with support and information.
+            We are able to assist you in our area of expertise as a consultant,
+            legal assistance, recovery agent, or with support and information,
+            whether you have lost money in your role as an investor, trader,
+            miner, shopper, victim of a romantic scam, or online user.
           </p>
         </div>
 

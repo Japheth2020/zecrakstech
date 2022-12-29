@@ -4,30 +4,30 @@ import { AiFillStar } from "react-icons/ai";
 
 const data = [
   {
-    name: "Lyne",
-    location: "New York",
-    image: "/images/m_1.jpg",
+    name: "Demare",
+    location: "USA",
+    image: "/images/m_1.png",
     testimony:
-      "I applied for a job recently and couldn't get it because I was setup about 7 years ago which got me a bad record, I was recommended to ZECRAKSTECH and after 24 hour they got the bad record on my name cleared.									",
+      "I just applied for a job but was unsuccessful because I had a negative record from a setup that occurred about 7 years ago. I was referred to ZECRAKSTECH, and within 24 hours they had my name cleaned of the bad record.",
   },
   {
-    name: "Bridget",
+    name: "Eubiasantiago",
     location: "Canada",
-    image: "/images/f_1.jpg",
+    image: "/images/f_1.png",
     testimony:
-      "I Contacted this trading platform about 5 months now lol, I am retired and wanted to save up my pension, so when I saw many recommendations about them I decided to try them out. I started with a little investment of €1,800 and it looks like I was making good profit not know I was only getting scammed, I would never forget how I invested all my life savings into this trading platform and I stopped getting replies from them. I was about to take my life due to depression on how to take care of my sick daughter but a friend told me About this ZECRAKSTECH, I doubt them at first but after making research I went ahead with the recovery, I asked my self what’s there to lose. After providing all the info he requested, within 48 hours of hard work I received a notification of €15,340 to my wallet, followed with another notification of €32,709 until all my balance was completed. I sent them 10% of the total money as appreciation.										",
+      "I've been in contact with this trading platform for almost five months now, hehe. Since I'm retired and need to save money for my pension, I decided to give them a try after seeing so many positive reviews. I began with a little investment of €1,800 and it appeared that I was generating a nice profit without realizing that I was only being duped. I will never forget how I put all of my life savings into this trading platform before they stopped responding to me. Due to my depression over how to care for my ill daughter, I was on the verge of suicide when a friend informed me about ZECRAKSTECH. At first, I didn't believe them, but after doing some research, I decided to move forward with the recovery since I reasoned that there was nothing to lose. After giving him all the information he needed, I worked hard for 48 hours before receiving a notification adding €15,340 to my wallet. This was followed by another notification adding €32,709 till my entire total was paid. I sent them a thank-you gift of 10% of the whole amount.",
   },
   {
-    name: "Raj",
-    location: "UK",
-    image: "/images/m_2.jpg",
+    name: "Ajay",
+    location: "USA",
+    image: "/images/m_2.png",
     testimony:
-      "GOOD JOB ZECRAKSTECH, Your agents were fast to help me in retrieving my 456800 USDT, Massive respect and love to every of your team who work behind the scenes to make sure people get the help they deserve",
+      "GOOD JOB ZECRAKSTECH, Thanks so much to all of your team members that work tirelessly behind the scenes to ensure that individuals receive the assistance they need, your agents helped me quickly retrieve my 456800 USDT.",
   },
   {
-    name: "Bernedette",
-    location: "UK",
-    image: "/images/f_2.jpg",
+    name: "Manjeet",
+    location: "Canada",
+    image: "/images/f_2.png",
     testimony:
       "Thanks for helping me with my lost BTCs, noice work ZECRAKSTECH, I will recommend you to everyone I know.",
   },
