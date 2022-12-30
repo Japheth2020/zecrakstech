@@ -41,7 +41,7 @@ const Header = () => {
         <div className="flex items-center gap-x-[2em]  px-[3em] ">
           <HeaderNav name={"HOME"} link="/" />
           <HeaderNav name={"SERVICES"} link="/services" />
-          {/* <HeaderNav name={"CONTACT"} link="/contact" /> */}
+          <HeaderNav name={"CONTACT"} link="/contact" />
         </div>
         <div className="flex items-center gap-2">
           <div className="p-4 rounded-full bg-pri text-white text-[2em]">
@@ -70,7 +70,7 @@ const Header = () => {
           <div className="flex flex-col  items-center gap-y-[2em] w-full  py-[2em] bg-pri ">
             <HeaderNav_ name={"HOME"} link="/" />
             <HeaderNav_ name={"SERVICES"} link="/services" />
-            {/* <HeaderNav_ name={"CONTACT"} link="/contact" /> */}
+            <HeaderNav_ name={"CONTACT"} link="/contact" />
           </div>
         </motion.div>
       )}

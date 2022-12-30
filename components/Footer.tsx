@@ -20,15 +20,17 @@ const Footer = () => {
             <Button link={"https://wa.me/message/3TTFOYACFKH4N1"}>
               <BsWhatsapp />
             </Button>
-            <Button link={"https://msng.link/o/?@trezorwalletzcom=tg"}>
+            <Button  link={"https://t.me/ZECRAKSTECH"}>
               <FaTelegramPlane />
             </Button>
-            <Button link={"https://msng.link/o/?trezorwalletzcom=ig"}>
+            <Button
+              link={"https://instagram.com/zecrakstech?igshid=YmMyMTA2M2Y="}
+            >
               <BsInstagram />
             </Button>
             <Button
               link={
-                "mailto:trezorwalletz.com@gmail.com?subject=I%20am%20messaging%20from%20trezorwalletz.com"
+                "mailto:zecrackstechzecrakstech@gmail.com?subject=I%20am%20messaging%20from%20trezorwalletz.com"
               }
             >
               <FiMail />
@@ -74,7 +76,7 @@ const Footer = () => {
             <a
               className="flex items-center gap-2"
               href={
-                "mailto:zecrackstechzecrakstech.com@gmail.com?subject=I%20am%20messaging%20from%20trezorwalletz.com"
+                "mailto:zecrackstechzecrakstech@gmail.com?subject=I%20am%20messaging%20from%20trezorwalletz.com"
               }
             >
               <FiMail />
