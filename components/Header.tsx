@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <div className="flex items-center w-full relative z-[550]">
       <div className=" bg-pri py-[10px] px-[5em] w-full md:w-fit flex justify-between">
-        <p className="text-[2em] font-[700] text-white "> </p>
+        <p className="text-[2em] font-[700] text-white ">ZECRAKSTECH</p>
         <button onClick={()=>setShow(!show)} className="text-white md:hidden inline text-[2.5em] ">
           {show ? <MdClose /> : <VscThreeBars />}
         </button>

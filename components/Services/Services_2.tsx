@@ -7,7 +7,7 @@ import { MdGpsFixed } from "react-icons/md";
 
 const ServiceCard = ({ article }: any) => {
   return (
-    <Link href={`/article/${article.id}`}>
+    <Link href={`/article/${article._id}`}>
       <div className="flex flex-col group cursor-pointer shadow-2xl ">
         <div className="flex items-center gap-4 p-4 group-hover:bg-pri group-hover:text-white animate duration-500 bg-white text-pri rounded-lg">
           <div className="group-hover:bg-pri bg-white text-[10em]  w-[50px] h-[50px] shadow-xl rounded-full flex items-center justify-center">
@@ -47,7 +47,7 @@ const Services = ({ articles }: any) => {
             </p>
 
             <p
-              className="font-[600] md:text-[3em] leading-[1.3em] mt-4"
+              className="font-[600] md:text-[3em] text-[2em] leading-[1.3em] mt-4"
               // data-aos="fade-right "
             >
               Lives are impacted by us! With the rapid recovery of their assets,

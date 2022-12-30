@@ -8,9 +8,9 @@ import { MdGpsFixed } from "react-icons/md";
 
 
 const ServiceCard = ({ article }: any) => {
-  console.log("prps; ", article)
+  // console.log("prps; ", article)
   return (
-    <Link href={`/article/${article.id}`}>
+    <Link href={`/article/${article._id}`}>
       <div className="flex flex-col group cursor-pointer ">
         <div className="flex items-center gap-4 p-4 group-hover:bg-pri group-hover:text-white animate duration-500 bg-white text-pri rounded-lg">
           <div className="group-hover:bg-pri bg-white text-[10em]  w-[50px] h-[50px] shadow-xl rounded-full flex items-center justify-center">
@@ -69,7 +69,7 @@ const Services = ({ articles }: any) => {
         </div>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-[5em] gap-[3em]">
-          {articles.map((item:any, index:any) => <ServiceCard key={index} article={item}  />)}
+          {articles?.slice(0, 4)?.map((item:any, index:any) => <ServiceCard key={index} article={item}  />)}
         </div>
       </div>
     </div>

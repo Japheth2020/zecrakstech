@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { AiOutlineThunderbolt } from "react-icons/ai";
+// import { AiOutlineThunderbolt } from "react-icons/ai";
+import { urlFor } from "../sanity";
 
 const ServiceShowcase = ({ article }: any) => {
- 
+ console.log(article)
 
   return (
     <div className="lg:px-[10em] md:px-[6rem] px-[1rem] flex flex-col py-[2em]  ">
@@ -20,24 +21,24 @@ const ServiceShowcase = ({ article }: any) => {
           <p className="bg-pri p-4 text-white md:text-[18px] ">
             {article.description}
           </p>
-          <Image
+          <img
             alt={article.title}
-            src={article.image}
-            width={1000}
-            height={500}
+            src= {urlFor(article.image).url()}
+            // width={1000}
+            // height={500}
           />
         </div>
         <div>
           {article?.body?.map((item: any, index:any) => (
-            <p key={index} className="md:text-[24px] text-[18px] pb-[1em] ">{item.p}</p>
+            <p key={index} className="md:text-[24px] text-[18px] pb-[1em] ">{item}</p>
           ))}
         </div>
 
         <div>
           <p>{article?.bullets?.description}</p>
-          {article?.bullets?.body?.map((item: any, index: any) => (
+          {article?.bulletPoints?.body?.map((item: any, index: any) => (
             <p key={index} className="md:text-[24px] text-[18px] pb-[1em]">
-              <span>{index + 1}</span>. {"  "} <span>{item.bullet}</span>
+              <span>{index + 1}</span>. {"  "} <span>{item}</span>
             </p>
           ))}
         </div>

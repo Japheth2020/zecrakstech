@@ -1,13 +1,16 @@
-import {server} from '../../../config'
+// import {server} from '../../../config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import ServiceShowcase from '../../../components/ServiceShowcase'
 import Head from 'next/head'
+import client from '../../../sanity'
 // import Meta from '../../../components/Meta'
 
-const article = ({ article }:any) => {
+const article = ({ article, paths }:any) => {
   // const router = useRouter()
   // const { id } = router.query
+
+  console.log("Paths: ", paths);
 
   return (
     <div className=''>
@@ -23,31 +26,36 @@ const article = ({ article }:any) => {
   )
 }
 
-export const getStaticProps = async (context:any) => {
-  const res = await fetch(`${server}/api/articles/${context.params.id}`)
+export const getStaticPaths = async () => {
+  const res = await client.fetch(`*[_type == "article"]`);
+  const articles = await res
 
-  const article = await res.json()
+  const ids = articles.map((article:any) => article._id)
+  const paths = ids.map((id:any) => ({ params: { id: id } }))
+
+
+  console.log("Paths: ", paths);
+
+  return {
+    paths:paths,
+    fallback: false,
+  }
+}
+
+export const getStaticProps = async (context:any) => {
+  const articles = await client.fetch(`*[_type == "article" && _id == "${context.params.id}"]`);
+  // const res = await fetch(`${server}/api/articles/${context.params.id}`)
+
+  const article = await articles
 
   return {
     props: {
-      article,
+      article : article[0],
     },
   }
 }
 
-export const getStaticPaths = async () => {
-  const res = await fetch(`${server}/api/articles`)
 
-  const articles = await res.json()
-
-  const ids = articles.map((article:any) => article.id)
-  const paths = ids.map((id:any) => ({ params: { id: id.toString() } }))
-
-  return {
-    paths,
-    fallback: false,
-  }
-}
 
 // export const getStaticProps = async (context) => {
 //   const res = await fetch(

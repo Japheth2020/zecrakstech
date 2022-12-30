@@ -82,7 +82,7 @@ export const articles = [
   },
   {
     id: "3",
-    title: "Bank Transfer Scam/Money laundering",
+    title: "Bank Transfer Scam/Money Laundering",
     image: "/images/recover_4.jpg",
     description:
       "Recover money sent to wrong bank account, bank unsettled transfer, E-transfer, MoneyGram, P2P transfers, cash deposit.",
