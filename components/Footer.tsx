@@ -3,6 +3,7 @@ import { Button } from "./Tablet";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { AiFillYoutube } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -15,12 +16,12 @@ const Footer = () => {
             149 countries, with top-notch specialists and professionals to
             assist you with any technological issue.
           </p>
-
+{/* 
           <div className="flex items-center ">
             <Button link={"https://wa.me/message/3TTFOYACFKH4N1"}>
               <BsWhatsapp />
             </Button>
-            <Button  link={"https://t.me/ZECRAKSTECH"}>
+            <Button link={"https://t.me/ZECRAKSTECH"}>
               <FaTelegramPlane />
             </Button>
             <Button
@@ -35,7 +36,10 @@ const Footer = () => {
             >
               <FiMail />
             </Button>
-          </div>
+            <Button link={" https://youtube.com/@zecrakstechzecrackstech  "}>
+            <AiFillYoutube />
+            </Button>
+          </div> */}
         </div>
 
         <div className="text-white flex flex-col gap-6">
@@ -80,7 +84,14 @@ const Footer = () => {
               }
             >
               <FiMail />
-              zecrackstechzecrakstech.com@gmail.com
+              zecrackstechzecrakstech@gmail.com
+            </a>
+            <a
+              className="flex items-center gap-2"
+              href={"  https://youtube.com/@zecrakstechzecrackstech "}
+            >
+              <AiFillYoutube />
+              Youtube
             </a>
           </div>
         </div>
