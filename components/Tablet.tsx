@@ -17,7 +17,7 @@ export const Button = ({ children, link }:any) => {
 const Tablet = () => {
   return (
     <div className="fixed z-[100] bg-pri bottom-3 right-2 rounded-lg flex flex-col  items-center">
-      <Button link={"https://wa.link/jjtebz"}>
+      <Button link={"https://wa.me/message/3TTFOYACFKH4N1"}>
         <BsWhatsapp />
       </Button>
       <Button link={"https://t.me/ZECRAKSTECH"}>

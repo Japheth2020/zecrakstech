@@ -17,7 +17,7 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center ">
-            <Button link={"https://wa.link/jjtebz"}>
+            <Button link={"https://wa.me/message/3TTFOYACFKH4N1"}>
               <BsWhatsapp />
             </Button>
             <Button link={"https://msng.link/o/?@trezorwalletzcom=tg"}>
@@ -43,10 +43,10 @@ const Footer = () => {
               className="flex items-center gap-2"
               target={"_blank"}
               rel="noreferrer"
-              href={"https://wa.link/jjtebz"}
+              href={"https://wa.me/message/3TTFOYACFKH4N1"}
             >
               <BsWhatsapp />
-              +1 (248) 257‑3285
+              +1 (248) 295‑1046
             </a>
             <a
               className="flex items-center gap-2"

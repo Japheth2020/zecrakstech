@@ -49,7 +49,7 @@ const Header = () => {
           </div>
           <div>
             <p>Contact Us</p>
-            <p className="font-[700] "> ‪+1 (248) 257‑3285‬</p>
+            <p className="font-[700] "> +1 (248) 295‑1046</p>
           </div>
         </div>
       </div>
