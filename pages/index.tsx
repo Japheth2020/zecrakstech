@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import client from "../sanity"
+import client from "../sanity";
 
 import WhatWeDo from "../components/WhatWeDo";
 import Services from "../components/Services/Services";
@@ -18,7 +18,36 @@ export default function Home({ articles }: any) {
     <>
       <Head>
         <title>HOME</title>
-        <meta name="description" content="For all your wallet issues" />
+
+        <meta
+          property="og:title"
+          content="Home - Zecrakstech For all your wallet issues"
+        />
+        <meta
+          property="og:description"
+          content="Zecrakstech For all your wallet issues"
+        />
+        <meta property="og:url" content="https://zecrakstech.com/" />
+        <meta property="og:type" content="website" />
+        <meta
+          name="description"
+          content="Zecrakstech For all your wallet issues"
+        />
+        <meta name="keywords" content="Zecrakstech, wallet, issues" />
+        <meta name="author" content="Zecrakstech" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@zecrakstech" />
+        <meta name="twitter:creator" content="@zecrakstech" />
+        <meta
+          name="twitter:title"
+          content="Home - Zecrakstech For all your wallet issues"
+        />
+        <meta
+          name="twitter:description"
+          content="Zecrakstech For all your wallet issues"
+        />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -34,20 +63,16 @@ export default function Home({ articles }: any) {
   );
 }
 
-
-
-
 export const getStaticProps = async () => {
   const articles = await client.fetch(`*[_type == "article"]`);
   // const articles = await res.json()
 
   return {
     props: {
-      articles
+      articles,
     },
-  }
-}
-
+  };
+};
 
 // export async function getStaticProps() {
 //   // Call an external API endpoint to get posts.
